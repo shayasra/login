@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Password</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("Enter User Name","");
+        if(userName === "Admin"){
+            let pwd = prompt("Enter Password");
+            if (pwd === "The Master"){
+                alert("Welcome Admin");
+            }
+            else if (pwd ===""||pwd==="nul"){
+                alert("Cancelled");
+            }
+            else{
+                alert("Wrong Password");
+            }
+        }
+        else if (userName === ""||userName===null){
+            alert("Cancel");
+        }
+        else {
+            alert("I don't Know you!!");
+        }
+    </script>
+</body>
+</html>
